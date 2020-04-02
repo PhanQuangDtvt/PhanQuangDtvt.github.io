@@ -1,5 +1,17 @@
 *{margin: 0; padding: 0;}
 
+.cropped img {
+    margin: -2px 0px -24px 0px;
+}
+
+.cropped {
+    width: 110px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
 .parallax-style {
     background-color: rgba(26, 188, 156, 0.8);
     width: 100%;
@@ -39,54 +51,54 @@ a.nuthire:hover {
 }
 
 img.avatar {
-    width: 10%;
-    border-radius: 50%;
-    margin-bottom: 50px;
+    width: 100%;
+    /* border-radius: 50%; */
+    /* margin-bottom: 50px; */
 } 
 
 .logo {
-	width: 50px;
-	height: 50px;
-	border-radius: 25px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
 }
 
 a.nav-link {
-	font-family: segoe ui;
-	text-transform: uppercase;
-	font-size: 13px;
-	color: #101010;
-	line-height: 41px;
+    font-family: segoe ui;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #101010;
+    line-height: 41px;
 }
 
 li.nav-item {
-	margin: 0;
-	padding: 0;
-	margin: 0 20px;
+    margin: 0;
+    padding: 0;
+    margin: 0 20px;
 }
 
 @media (max-width: 576px) {
-	*{}
+    *{}
 
-	ul.nav.navbar-nav.float-xs-right {float: none !important;}
+    ul.nav.navbar-nav.float-xs-right {float: none !important;}
 
-	li.nav-item {
-	    margin: 0px 7px;
-	}
+    li.nav-item {
+        margin: 0px 7px;
+    }
 
-	a.navbar-brand {
-	    text-align: center;
-	    width: 100%;
-	}
-	
+    a.navbar-brand {
+        text-align: center;
+        width: 100%;
+    }
+    
 }
 
 body,html {
-	height: 100%;
-	width: 100%;
+    height: 100%;
+    width: 100%;
 }
 
 body {
-	color: #8c8c8c;
+    color: #8c8c8c;
     background: #f1f2f7;
     font-family: 'Open Sans',sans-serif;
     font-weight: 100;
@@ -96,14 +108,14 @@ body {
 }
 
 .khoi1 {
-	background: #CFB488;
-	height: 100%;
-	width: 100%;
-	position: relative;
+    background: #CFB488;
+    height: 100%;
+    width: 100%;
+    position: relative;
 }
 
 .header-1 {
-	height: 608px;
+    height: 608px;
     background-image: url(images/header-bg.jpg);
     background-color: rgb(26, 188, 156);
     background-position: 50% -110px;
@@ -228,28 +240,28 @@ body {
 }
 
 .container-detail {
-	padding-right: 15px;
+    padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
 }
 
 @media (min-width: 768px) {
-	.container-detail {
-	    width: 750px;
-	}
+    .container-detail {
+        width: 750px;
+    }
 }
 
 @media (min-width: 992px) {
-	.container-detail {
-	    width: 970px;
-	}
+    .container-detail {
+        width: 970px;
+    }
 }
 
 @media (min-width: 1200px) {
-	.container-detail {
-	    width: 1170px;
-	}
+    .container-detail {
+        width: 1170px;
+    }
 }
 
 address {
@@ -429,32 +441,32 @@ span.bold, a.bold {
 }
 
 @media only screen and (max-width: 992px) and (min-width: 320px) {
-	.experience-item .stay-time {
-	    position: relative;
-	    left: auto;
-	    top: auto;
-	    margin: 17px auto;
-	}
+    .experience-item .stay-time {
+        position: relative;
+        left: auto;
+        top: auto;
+        margin: 17px auto;
+    }
 }
 
 @media (max-width: 576px) {
-	.tt {
-	    margin-top: 130px;
-	}
+    .tt {
+        margin-top: 130px;
+    }
 }
 
 @media only screen and (max-width: 992px) and (min-width: 320px) {
-	.experience-item .name-designation {
-	    width: 100%;
-	    float: none;
-	    text-align: center;
-	    padding: 0;
-	}
+    .experience-item .name-designation {
+        width: 100%;
+        float: none;
+        text-align: center;
+        padding: 0;
+    }
 }
 
 @media only screen and (max-width: 992px) and (min-width: 320px) {
-	.experience-item .comments {
-	    float: none;
-	    width: 100%;
-	}
+    .experience-item .comments {
+        float: none;
+        width: 100%;
+    }
 }
