@@ -4,54 +4,70 @@
 	<meta charset="UTF-8">
 	<title>Phan Duy Quang - Full Stack Developer Resume</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">  
-	<script type="text/javascript" src="vendor/bootstrap.js"></script>
- 	<script type="text/javascript" src="main.js"></script>
 	<link rel="stylesheet" href="vendor/bootstrap.css">
 	<link rel="stylesheet" href="vendor/font-awesome.css">
  	<link rel="stylesheet" href="1.css">
- 	<script type="text/javascript" src="js/jquery-3.0.0.js"></script>
-
-	<!-- Add mousewheel plugin (this is optional) -->
-	<script type="text/javascript" src="js/jquery.mousewheel.pack.js?v=3.1.3"></script>
-
-	<!-- Add fancyBox main JS and CSS files -->
-	<script type="text/javascript" src="fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
 	<link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox.css?v=2.1.5" media="screen" />
 </head>
 <body>
 	<!-- menu -->
-	<div class="menu-top">
-		<nav class="navbar navbar-light bg-faded navbar-fixed-top">
-			<div class="container">
-				<a class="navbar-brand" href="#"><img class="logo" src="images/logo-cv.jpg" alt=""></a>
-				<ul class="nav navbar-nav float-xs-right">
-					<li class="nav-item active">
-						<a class="nav-link" onclick="scrollingContainer('#about')">About <span class="sr-only">(current)</span></a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" onclick="scrollingContainer('#skills')">Skills</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" onclick="scrollingContainer('#experiences')">Experiences</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" onclick="scrollingContainer('#education')">Education</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
+	<div id="site-header" class="menu-top">
+        <nav id="site-navigation" class="main-navigation side-static" role="navigation">
+            <div class="navigation-header">
+                <a href="index.html">
+                	<img class="logo" src="images/so-icon.png" alt="Signature">
+                	<span class="name-logo">PDQuang</span>
+                </a>
+                <button class="menu-switch">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+            <!-- /.navigation-header -->
+            <ul class="nav navigation">
+                <li class="item" id="item-home">
+                	<a class="fa-home">Home</a>
+                </li>
+                <li class="item" id="item-about">
+                	<a  class="fa-user">About</a>
+                </li>
+                <li class="item" id="item-skill">
+                	<a class="fa-signal">Skills</a>
+                </li>
+                <li class="item" id="item-exp">
+                	<a class="fa-bar-chart-o">Experiences</a>
+                </li>
+                <li class="item" id="item-edu">
+                	<a class="fa-book">Education</a>
+                </li>
+            </ul>
+            <!-- /.navigation -->
+        </nav>
 	</div>
 	<!-- end menu -->
-	<div class="khoi1 header-1">
+	<div class="main-cv">
+	<div class="khoi1 header-1" id="banner">
 		<div class="parallax-style">
 			<div class="container text-xs-center">
 				<div class="tt">
-					<div class="cropped">
-						<img class="avatar" src="images/avatar-pdquang.jpg" alt="">
-					</div>
-					<h2>I'M PHAN DUY QUANG</h2>
-					<h3>A FULL STACK DEVELOPER</h3>
-					<a href="" class="nuthire btn btn-primary">Hire me</a>	
+					<h2 class="title-name scroll-title">I'M PHAN DUY QUANG</h2>
+					<h4 class="title-name scroll-title-1">A FULL STACK DEVELOPER</h4>
+					<ul class="social-profiles scroll-icon">
+						<li class="icon-log icon-1">
+							<a href="https://github.com/PhanQuangDtvt" class="fa-github">
+								<span>Github</span>
+							</a>
+						</li>
+						<li class="icon-log icon-2">
+							<a href="https://www.facebook.com/phanquangdtvt" class="fa-facebook">
+								<span>Facebook</span>
+							</a>
+						</li>
+						<li class="icon-log icon-3">
+							<a href="mailto:phanquangdtvt94@gmail.com" class="fa-envelope">
+								<span>Email</span>
+							</a>
+						</li>
+					</ul>
 				</div>		
 			</div>
 		</div>
@@ -73,7 +89,7 @@
 						<h2 class="title">Summary</h2>
 						<div class="about-content">
                             <p>
-                                I'm Phan Duy Quang, a full stack developer with <b>2 years of experience in Java technologies</b>, with good knowledge of <i>Java Core, Design Pattern, Object-Oriented Analysis and Design</i>.</p>
+                                I'm Phan Duy Quang, a developer with <b>2 years of experience in Java technologies</b>, with good knowledge of <i>Java Core, Design Pattern, Object-Oriented Analysis and Design</i>.</p>
                         	<p>Building quality websites and applications with HTML, CSS, and JavaScript.</p>
                             <p>Learning new languages and technologies is what I am passionate. I am considered a team-player because I like to help other and tend to work well within groups.</p>
 						</div>
@@ -289,8 +305,8 @@
 	</section>
 	 <!-- end education -->
 
-	 	 <!-- education -->
-	<section id="education" class="default-section">
+	 <!-- activities -->
+	<section class="default-section">
 		<div class="section-heading">
 			<h2 class="section-title">Activities</h2>
 		</div>
@@ -309,5 +325,14 @@
 			</div>
 		</div>
 	</section>
+	</div>
+	<div class="den" id="den-3d"></div>
+ 	<script type="text/javascript" src="js/jquery-3.0.0.js"></script>
+	<script type="text/javascript" src="vendor/bootstrap.js"></script>
+ 	<script type="text/javascript" src="main.js"></script>
+	<!-- Add mousewheel plugin (this is optional) -->
+	<script type="text/javascript" src="js/jquery.mousewheel.pack.js?v=3.1.3"></script>
+	<!-- Add fancyBox main JS and CSS files -->
+	<script type="text/javascript" src="fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
 </body>
 </html>
