@@ -609,6 +609,10 @@ button:focus {
     animation-delay: 0.2s;
 }
 
+.social-profiles .icon-4 {
+    animation-delay: 0.3s;
+}
+
 @-webkit-keyframes hienra {
     0% { transform: translateY(100px);
     opacity: 0; }
